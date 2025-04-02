@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Calculadora
+namespace CALCULADORA
 {
     public partial class Form1 : Form
     {
@@ -16,37 +16,76 @@ namespace Calculadora
         {
             InitializeComponent();
         }
-
         private void sumar_Click(object sender, EventArgs e)
         {
-            label_respuesta.Text = Int64.Parse(numero_uno.Text) + Int64.Parse(numero_dos.Text) + "";
+            label_respuesta.Text = Int64.Parse(numero_1.Text) +
+Int64.Parse(numero_2.Text) + "";
+        }
+        private void CALCULADORA_TextChanged(object sender, EventArgs e)
+        {
+              
+        }
+
+
+
+        private void RESTA_TextChanged(object sender, EventArgs e)
+        {
+            label_respuesta.Text = Int64.Parse(numero_1.Text) -
+Int64.Parse(numero_2.Text) + "";
+    }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DIVISION_TextChanged(object sender, EventArgs e)
+        {
+            label_respuesta.Text = Int64.Parse(numero_1.Text) /
+Int64.Parse(numero_2.Text) + "";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_respuesta_Click(object sender, EventArgs
+e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sumar_Click_1(object sender, EventArgs e)
+        {
+            label_respuesta.Text = Int64.Parse(numero_1.Text) +
+Int64.Parse(numero_2.Text) + "";
         }
 
         private void restar_Click(object sender, EventArgs e)
         {
-            label_respuesta.Text = Int64.Parse(numero_uno.Text) - Int64.Parse(numero_dos.Text) + "";
-        }
-
-        private void division_Click(object sender, EventArgs e)
-        
-        {
-            if (numero_dos.Text.Equals("0"))
-            {
-                label_respuesta.Text = "Error div x 0";
-            }
-            else
-            {
-                label_respuesta.Text = Int64.Parse(numero_uno.Text) / Int64.Parse(numero_dos.Text) + "";
-            }
-           
+            label_respuesta.Text = Int64.Parse(numero_1.Text) -
+Int64.Parse(numero_2.Text) + "";
         }
 
         private void multiplicar_Click(object sender, EventArgs e)
         {
-            label_respuesta.Text = Int64.Parse(numero_uno.Text) * Int64.Parse(numero_dos.Text) + "";
+            label_respuesta.Text = Int64.Parse(numero_1.Text) *
+Int64.Parse(numero_2.Text) + "";
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void dividir_Click(object sender, EventArgs e)
+        {
+            label_respuesta.Text = Int64.Parse(numero_1.Text) /
+Int64.Parse(numero_2.Text) + "";
+        }
+
+        private void numero_2_TextChanged(object sender, EventArgs e)
         {
 
         }
